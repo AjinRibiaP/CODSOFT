@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+    <style>
+
+
+      * {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+      }
+      
+      a {
+          text-decoration: none;
+      }
+      
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      
+      nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 99;
+      }
+      
+      .nav__content {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 1.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      nav .logo a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        transition: 0.3s;
+      }
+      nav .logo a:hover {
+        color: var(--primary-color-dark);
+      }
+      
+      nav .checkbox {
+        display: none;
+      }
+      
+      nav input {
+        display: none;
+      }
+      nav .checkbox i {
+        font-size: 2rem;
+        color: var(--primary-color);
+        cursor: pointer;
+      }
+      
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+        transition: left 0.3s;
+      }
+      
+      ul li a {
+        padding: 0.5rem 1rem;
+        border: 2px solid transparent;
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--text-dark);
+        transition: 0.3s;
+      }
+      
+      ul li a:hover {
+        border-top-color: var(--secondary-color);
+        border-bottom-color: var(--secondary-color);
+        color: var(--secondary-color);
+      }
+      
+      .section {
+        background-color: var(--extra-light);
+      }
+
+
+
+
+
+
+
+
+
+
+
+      .circle-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .circle {
+        display: inline-block;
+        width: 2cm;
+        height: 2cm;
+        border-radius: 2%;
+        background-color: #007bff;
+        margin: 0 10px;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#"><i>Ajin Ribia</i></a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#container">Certifications</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">Hi!</p>
+          <h1 class="title">
+            I am <b style="color:#9333ea;">Ajin Ribia<br></b>a Web Developer
+          </h1>
+          <p class="description">
+            Greetings! I'm thrilled to welcome you to my corner of the web. 
+            I'm Ajin , an adept web developer driven by a fervent enthusiasm for crafting captivating digital 
+            experiences. With a penchant for marrying aesthetics with functionality,
+            I specialize in the art of building visually stunning, seamlessly responsive,
+            and intuitively navigable websites. 
+          </p>
+          <div class="action__btns">
+            <button class="readmore">Read more</button>
+            <button class="portfolio">Portfolio</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="prof.png" alt="profile">
+        </div>
+      </div>
+    </section>
+   
+
+
+<!--CERTIFICATIONNNNNS-->    
+<b><center style="font-size: 1cm; color:#9333ea;">Certifications</center><br><br></b>
+<div class="container" id="container">
+  <div class="box" id="container">
+    <img src="cer1.png" alt="Image 1">
+    <p>ABC certification</p>
+  </div>
+  <div class="box">
+    <img src="cer2.png" alt="Image 2">
+    <p>XYZ certification</p>
+  </div>
+  <div class="box">
+    <img src="cer3.png" alt="Image 2">
+    <p>PQR certification</p>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<b><center style="font-size: 1cm; color:#9333ea;">Proficiency</center><br><br></b>
+<!--PROFICIENCYYYYYYYYYY-->
+
+
+
+<div class="bar-graph">
+  <div class="bar-label">Frontend</div>
+  <div class="bar" style="width: 80%;"></div> <!-- Adjust width for the filled bar -->
+  
+  <div class="bar-label">Backend</div>
+  <div class="bar" style="width: 60%;"></div> <!-- Adjust width for the filled bar -->
+  
+  <div class="bar-label">Data science</div>
+  <div class="bar" style="width: 40%;"></div> <!-- Adjust width for the filled bar -->
+</div>
+
+
+<!--CONTACTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-->
+
+    <section class="contact" id="contact">
+    <div class="contact" id="contact">
+    <div class="circle-container">
+      <b><center style="font-size: 1cm; color:#9333ea;">Contact</center><br><br></b>
+      <a href="#circle1" class="circle"><img src="git.png" style="width:2cm; height:2cm;"></a>
+      <a href="#circle2" class="circle"><img src="gog.png" style="width:2cm; height:2cm;"></a>
+      <a href="#circle3" class="circle"><img src="inst.png" style="width:2cm; height:2cm;"></a>
+      <a href="#circle4" class="circle"><img src="link.png" style="width:2cm; height:2cm;"></a>
+      <a href="#circle5" class="circle"><img src="git.png" style="width:2cm; height:2cm;"></a>
+    </div>
+  </div>
+</section>
+    
+
+
+
+
+
+
+
+
+  </body>
+</html>

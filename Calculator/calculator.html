@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .calculator {
+        width: 300px;
+        margin: 50px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="button"] {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        color: red;
+    }
+</style>
+</head>
+<body >
+<div class="calculator" style="background-color:rgb(47, 132, 169);color:black;">
+    <input type="text" id="display" readonly style="color:black;">
+    <br>
+    <input type="button" value="7" onclick="appendToDisplay('7')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="8" onclick="appendToDisplay('8')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="9" onclick="appendToDisplay('9')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="/" onclick="appendToDisplay('/')" style="background-color:rgb(67, 66, 66)">
+    <br>
+    <input type="button" value="4" onclick="appendToDisplay('4')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="5" onclick="appendToDisplay('5')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="6" onclick="appendToDisplay('6')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="*" onclick="appendToDisplay('*')" style="background-color:rgb(67, 66, 66)">
+    <br>
+    <input type="button" value="1" onclick="appendToDisplay('1')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="2" onclick="appendToDisplay('2')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="3" onclick="appendToDisplay('3')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="-" onclick="appendToDisplay('-')" style="background-color:rgb(67, 66, 66)">
+    <br>
+    <input type="button" value="0" onclick="appendToDisplay('0')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="." onclick="appendToDisplay('.')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="=" onclick="calculate()" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="+" onclick="appendToDisplay('+')" style="background-color:rgb(67, 66, 66)">
+    <br>
+    <input type="button" value="C" onclick="clearDisplay()" style="background-color:rgb(67, 66, 66)">
+</div>
+
+<script>
+    function appendToDisplay(value) {
+        document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+        document.getElementById('display').value = '';
+    }
+
+    function calculate() {
+        var expression = document.getElementById('display').value;
+        var result = eval(expression);
+        document.getElementById('display').value = result;
+    }
+</script>
+</body>
+</html>
