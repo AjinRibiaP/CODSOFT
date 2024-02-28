@@ -8,6 +8,7 @@
     body {
         font-family: Arial, sans-serif;
         text-align: center;
+        background:linear-gradient(to left,#7808f0,#06bdf5);
     }
     .calculator {
         width: 300px;
@@ -32,33 +33,37 @@
         font-size: 1.2em;
         color: red;
     }
+    button{
+        border-radius: 1cm;
+
+    }
 </style>
 </head>
 <body >
-<div class="calculator" style="background-color:rgb(47, 132, 169);color:black;">
+<div class="calculator" style="background-color:rgb(188, 220, 234);color:black;">
     <input type="text" id="display" readonly style="color:black;">
     <br>
-    <input type="button" value="7" onclick="appendToDisplay('7')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="8" onclick="appendToDisplay('8')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="9" onclick="appendToDisplay('9')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="/" onclick="appendToDisplay('/')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="7" onclick="appendToDisplay('7')" style="background-color:#fbfafa">
+    <input type="button" value="8" onclick="appendToDisplay('8')" style="background-color:#fbfafa">
+    <input type="button" value="9" onclick="appendToDisplay('9')" style="background-color:#fbfafa">
+    <input type="button" value="/" onclick="appendToDisplay('/')" style="background-color:#fbfafa">
     <br>
-    <input type="button" value="4" onclick="appendToDisplay('4')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="5" onclick="appendToDisplay('5')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="6" onclick="appendToDisplay('6')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="*" onclick="appendToDisplay('*')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="4" onclick="appendToDisplay('4')" style="background-color:#fbfafa">
+    <input type="button" value="5" onclick="appendToDisplay('5')" style="background-color:#fbfafa">
+    <input type="button" value="6" onclick="appendToDisplay('6')" style="background-color:#fbfafa">
+    <input type="button" value="*" onclick="appendToDisplay('*')" style="background-color:#fbfafa">
     <br>
-    <input type="button" value="1" onclick="appendToDisplay('1')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="2" onclick="appendToDisplay('2')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="3" onclick="appendToDisplay('3')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="-" onclick="appendToDisplay('-')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="1" onclick="appendToDisplay('1')" style="background-color:#fbfafa">
+    <input type="button" value="2" onclick="appendToDisplay('2')" style="background-color:#fbfafa">
+    <input type="button" value="3" onclick="appendToDisplay('3')" style="background-color:#fbfafa">
+    <input type="button" value="-" onclick="appendToDisplay('-')" style="background-color:#fbfafa">
     <br>
-    <input type="button" value="0" onclick="appendToDisplay('0')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="." onclick="appendToDisplay('.')" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="=" onclick="calculate()" style="background-color:rgb(67, 66, 66)">
-    <input type="button" value="+" onclick="appendToDisplay('+')" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="0" onclick="appendToDisplay('0')" style="background-color:#fbfafa">
+    <input type="button" value="." onclick="appendToDisplay('.')" style="background-color:#fbfafa">
+    <input type="button" value="=" onclick="calculate()" style="background-color:#fbfafa">
+    <input type="button" value="+" onclick="appendToDisplay('+')" style="background-color:#fbfafa">
     <br>
-    <input type="button" value="C" onclick="clearDisplay()" style="background-color:rgb(67, 66, 66)">
+    <input type="button" value="C" onclick="clearDisplay()" style="background-color:#fbfafa">
 </div>
 
 <script>
